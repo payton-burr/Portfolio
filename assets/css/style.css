@@ -1,0 +1,106 @@
+
+/* Need to add font */
+
+
+/* Globals */
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+#border-right {
+  border-right: 1px solid #444;
+}
+
+.large-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #444;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  justify-content: space-around;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 1rem 1.4rem;
+  padding-top: 100%;
+  border-left: 1px solid #444;
+}
+
+#navbar ul li a:hover {
+  background-color: #444;
+}
+
+/* Showcase */
+
+#showcase {
+  background: #333 url(../images/background.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.4)
+}
