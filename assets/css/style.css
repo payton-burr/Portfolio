@@ -19,7 +19,7 @@ p {
 }
 
 #border-right {
-  border-right: 1px solid #444;
+  border-right: 1px solid #dadada;
 }
 
 .container {
@@ -74,7 +74,7 @@ p {
 }
 
 .text-primary {
-  color: #ADF1D2;
+  color: #08ffc8;
 }
 
 /* Navbar */
@@ -82,7 +82,7 @@ p {
   display: flex;
   position: sticky;
   top: 0;
-  background-color: #333;
+  background-color: #204969;
   color: #fff;
   justify-content: space-around;
   z-index: 1;
@@ -99,7 +99,7 @@ p {
   color: #fff;
   padding: 1rem 1.4rem;
   padding-top: 100%;
-  border-left: 1px solid #444;
+  border-left: 1px solid #dadada;
 }
 
 #navbar ul li a:hover {
@@ -123,7 +123,17 @@ p {
   align-items: center;
   height: 100%;
   padding: 0 2rem;
-  background-color: rgba(0, 0, 0, 0.4)
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Section: About me */
+
+#info {
+  display: flex;
+  padding: 1rem;
+  height: 50vh;
+  background-color: #f4f4f4;
+  justify-content: space-around;
 }
 
 /* Section: Projects */
@@ -131,16 +141,22 @@ p {
 .projects {
   display: flex;
   padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .project {
   flex: 1;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+  flex-basis: 25%;
+  border: 1px solid #333;
+  border-radius: 10px;
+  margin: 0.25rem;
 }
 
 
 /* This will be for the Project image */
+
 /* .info .projects .projects img {
   margin-bottom: 1rem;
 } */
