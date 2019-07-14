@@ -130,6 +130,7 @@ p {
 
 #info {
   display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
   height: 50vh;
   background-color: #ff6768;
@@ -194,9 +195,46 @@ p {
   font-size: 1.4rem;
 }
 
+@media only screen and (max-width: 769px) {
 
-/* This will be for the Project image */
 
-/* .info .projects .projects img {
-  margin-bottom: 1rem;
-} */
+  #navbar {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #navbar ul {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  #navbar ul li a {
+    border: none;
+    margin: 0 1.3rem;
+  }
+
+  #info {
+    height: 75vh;
+    justify-content: space-between;
+  }
+
+  #info #profile-info {
+    flex-basis: 100%;
+  }
+
+  #info #profile-info #contact a {
+    display: inline-block;
+    color: #fff;
+    margin: 1.2rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  #info #profile-info #contact a {
+    display: inline-block;
+    color: #fff;
+    margin: 1.2rem 1.5rem;
+  }
+}
